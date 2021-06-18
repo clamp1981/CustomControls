@@ -101,7 +101,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\lock_16px.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancel_20px_line.png" />
   </ItemGroup>
@@ -113,6 +115,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\info01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_01_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock_01_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_01.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock_01.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

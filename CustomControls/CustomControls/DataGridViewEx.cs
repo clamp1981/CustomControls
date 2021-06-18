@@ -17,8 +17,9 @@ namespace CustomControls.CustomControls
     /// </summary>
     public partial class DataGridViewEx : Panel
     {
-        public DataGridView DataGridView = new DataGridView();       
-        public DataGridViewEx( Color border_color )
+        public DataGridView DataGridView = new DataGridView();
+      
+        public DataGridViewEx( Color border_color)
         {
             InitializeComponent();
 
@@ -42,6 +43,13 @@ namespace CustomControls.CustomControls
             this.UpdateStyles();
 
         }
+
+        public void UpdateStylesGridview()
+        {
+            MethodInfo method = this.DataGridView.GetType().GetMethod("UpdateStyles", BindingFlags.NonPublic | BindingFlags.Instance);
+            method.Invoke(this.DataGridView, null);
+        }
+
 
         public void SetBorderColor(Color border_color)
         {
